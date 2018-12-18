@@ -60,4 +60,5 @@ typings/
 # next.js build output
 .next
 
-AuthKey_6F2LBRA7TK.p8
+# ignore apple music private key file
+.p8
