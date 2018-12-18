@@ -1,12 +1,13 @@
 require('dotenv').config()
 const Spotify = require('node-spotify-api')
+const got = require('got')
 
 const spotify = new Spotify({
     id: process.env.SPOTIFY_CLIENT_ID,
     secret: process.env.SPOTIFY_CLIENT_SECRET
 });
 
-module.exports = function(app) {
+module.exports = function(app, token) {
     app.post('/getSpotifyID', function(req,res) {
         spotify.search({ type: 'track', query: req.body.songName, limit: 1 })
         .then(function(response) {
@@ -15,5 +16,22 @@ module.exports = function(app) {
         .catch(function(err) {
             console.log(err);
         });
+    })
+    app.post('/getAppleMusicID', function(req,res) {
+        (async () => {
+            try {
+                const response = await got('catalog/us/search?term=james+brown&limit=2&types=artists,albums', 
+                {baseUrl: 'https://api.music.apple.com/v1/',
+                 headers: {
+                     'Authorization': `Bearer ${token}`
+                 }
+                })
+                res.json(response.body);
+                //=> '<!doctype html> ...'
+            } catch (error) {
+                res.json(error.response.body);
+                //=> 'Internal server error ...'
+            }
+        })();
     })
 }
