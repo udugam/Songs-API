@@ -61,4 +61,4 @@ typings/
 .next
 
 # ignore apple music private key file
-.p8
+AuthKey.p8

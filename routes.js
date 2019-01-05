@@ -12,7 +12,11 @@ module.exports = function(app, token) {
         console.log(req.body)
         spotify.search({ type: 'track', query: req.body.songName, limit: 1 })
         .then(function(response) {
-            res.json(response.tracks.items[0].id)
+            if(typeof response.tracks.items[0] === 'undefined') {
+                res.json('no result')
+            } else {
+                res.json(response.tracks.items[0].id)
+            }
         })
         .catch(function(err) {
             console.log(err);
@@ -29,7 +33,11 @@ module.exports = function(app, token) {
                     },
                     json: 'true'
                 })
-                res.json(response.body.results.songs.data[0].id);
+                if(typeof response.body.results.songs === 'undefined') {
+                    res.json('no result')
+                } else {
+                    res.json(response.body.results.songs.data[0].id);
+                }
             } catch (error) {
                 res.json(error.response.body);
             }
