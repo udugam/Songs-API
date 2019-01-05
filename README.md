@@ -9,10 +9,10 @@ A valid request requires:
 2) Artist and Song Name as part of the request's body
 
 ### Request Header Example (Postman Screenshot)
-![alt](https://github.com/adam-p/Songs-API/HeaderExample.png)
+![Header Example](https://github.com/udugam/Songs-API/blob/master/HeaderExample.png)
 
 ### Request Body Example (Postman Screenshot)
-![alt](https://github.com/adam-p/Songs-API/BodyExample.png)
+![Body Example](https://github.com/udugam/Songs-API/blob/master/BodyExample.png)
 
 ### Endpoints
 A request can be sent to two possible endpoints, one for each Music Library:
