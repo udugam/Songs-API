@@ -16,8 +16,8 @@ A valid request requires:
 
 ### Endpoints
 A request can be sent to two possible endpoints, one for each Music Library:
-Apple Music -> https://d3j4z06nr8.execute-api.us-east-1.amazonaws.com/default/getAppleMusicID
-Spotify -> https://d3j4z06nr8.execute-api.us-east-1.amazonaws.com/default/getSpotifyID
+- https://d3j4z06nr8.execute-api.us-east-1.amazonaws.com/default/getAppleMusicID
+- https://d3j4z06nr8.execute-api.us-east-1.amazonaws.com/default/getSpotifyID
 
 ### API KEY
 V625pswHAA3scODYQGy0I5CHIHXG5lG975Nbcbg4
