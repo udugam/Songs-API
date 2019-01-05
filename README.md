@@ -8,10 +8,10 @@ A valid request requires:
 1) An API KEY as part of the request's header
 2) Artist and Song Name as part of the request's body
 
-### Request Header Example
+### Request Header Example (Postman Screenshot)
 ![alt](https://github.com/adam-p/Songs-API/HeaderExample.png)
 
-### Request Body Example
+### Request Body Example (Postman Screenshot)
 ![alt](https://github.com/adam-p/Songs-API/BodyExample.png)
 
 ### Endpoints
