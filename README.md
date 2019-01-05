@@ -1,5 +1,5 @@
 # Songs API
-This API returns an Apple Music or Spotify song ID for a given song.
+This API returns an Apple Music or Spotify song ID for a given song. The repo's code has been refactored to be individual AWS Lambda Functions for each endpoint of the API. See lambda folder of repo for code.
 
 Usage
 =====
