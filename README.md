@@ -20,8 +20,5 @@ A request can be sent to two possible endpoints, one for each Music Library:
 - https://d3j4z06nr8.execute-api.us-east-1.amazonaws.com/default/getSpotifyID
 
 ### API KEY
+- V625pswHAA3scODYQGy0I5CHIHXG5lG975Nbcbg4
 This API KEY is for testing only and has been limited to 20 requests per a day and 1 request every 10 seconds. Email Ryan at ryan.udugam@gmail.com for an unrestricted API KEY.
-V625pswHAA3scODYQGy0I5CHIHXG5lG975Nbcbg4
-
-
-
